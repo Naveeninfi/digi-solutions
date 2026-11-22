@@ -69,8 +69,8 @@ app/public/wp-content/uploads/
 
 # WordPress content index
 /app/public/wp-content/index.php
-/app/public/local-xdebug-info.php
 
 # Local environment files
 app/.envrc
 app/public/.user.ini
+app/public/local-xdebuginfo.php
