@@ -32,7 +32,7 @@ add_action('login_enqueue_scripts', static function () {
         return home_url('/');
     });
     add_filter('login_message', static function ($message) {
-        $logo_url = 'http://digi-solutions.local/wp-content/uploads/2026/11/digisolutions-full-logo-tight.png';
+        $logo_url = home_url('/wp-content/uploads/2026/11/digisolutions-full-logo-tight.png');
         return $message . '<div class="dsaui-login-logo"><img src="' . esc_url($logo_url) . '" alt="DigiSolutions"></div>';
     });
 });

@@ -1062,7 +1062,7 @@ td a {
             rgba(8, 15, 48, 0.25),
             rgba(8, 15, 48, 0.05)
         ),
-        url("http://digi-solutions.local/wp-content/uploads/2026/11/Bgimage.png");
+        url("/wp-content/uploads/2026/11/Bgimage.png");
 
     background-size: cover;
     background-position: center;
