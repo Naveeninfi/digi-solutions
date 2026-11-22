@@ -1,0 +1,121 @@
+/* Native navigation only. No editor, form, or plugin-content selectors.
+ * Sidebar and toolbar rules change paint only: no sizing, spacing, positioning, display,
+ * icon content, menu ordering, or interaction overrides.
+ */
+body.wp-admin.dsaui-admin {
+    --dsaui-purple: #6434c9;
+    --dsaui-ink: #202638;
+    --dsaui-muted: #62697a;
+    --dsaui-line: #e7e8ef;
+}
+.dsaui-admin #adminmenuback,
+.dsaui-admin #adminmenuwrap,
+.dsaui-admin #adminmenu {
+    background: #fff;
+}
+.dsaui-admin #adminmenuwrap { box-shadow: 1px 0 0 var(--dsaui-line); }
+.dsaui-admin #adminmenu a { color: var(--dsaui-ink); }
+.dsaui-admin #adminmenu div.wp-menu-image::before { color: var(--dsaui-muted); }
+.dsaui-admin #adminmenu .wp-submenu,
+.dsaui-admin #adminmenu .wp-has-current-submenu .wp-submenu,
+.dsaui-admin #adminmenu .wp-has-current-submenu .wp-submenu.sub-open,
+.dsaui-admin #adminmenu .wp-has-current-submenu.opensub .wp-submenu,
+.dsaui-admin #adminmenu a.wp-has-current-submenu:focus + .wp-submenu {
+    background: #f5f3fa;
+}
+.dsaui-admin #adminmenu .wp-submenu a { color: #4e5264; }
+.dsaui-admin #adminmenu li.menu-top:hover,
+.dsaui-admin #adminmenu li.opensub > a.menu-top,
+.dsaui-admin #adminmenu li > a:focus,
+.dsaui-admin #adminmenu a:hover {
+    background: #f0eafa;
+    color: #5123ae;
+}
+.dsaui-admin #adminmenu li.menu-top:hover > a .wp-menu-image::before,
+.dsaui-admin #adminmenu li.opensub > a .wp-menu-image::before,
+.dsaui-admin #adminmenu a.menu-top:focus .wp-menu-image::before { color: #5123ae; }
+.dsaui-admin #adminmenu li.current > a.menu-top,
+.dsaui-admin #adminmenu li.current > a.menu-top:hover,
+.dsaui-admin #adminmenu li.current > a.menu-top:focus,
+.dsaui-admin #adminmenu li.wp-has-current-submenu > a.wp-has-current-submenu,
+.dsaui-admin #adminmenu li.wp-has-current-submenu > a.wp-has-current-submenu:hover,
+.dsaui-admin #adminmenu li.wp-has-current-submenu > a.wp-has-current-submenu:focus,
+.dsaui-admin #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head {
+    background: var(--dsaui-purple);
+    color: #fff;
+}
+.dsaui-admin #adminmenu li.current > a.menu-top .wp-menu-image::before,
+.dsaui-admin #adminmenu li.current:hover > a.menu-top .wp-menu-image::before,
+.dsaui-admin #adminmenu li.wp-has-current-submenu > a.wp-has-current-submenu .wp-menu-image::before,
+.dsaui-admin #adminmenu li.wp-has-current-submenu:hover > a.wp-has-current-submenu .wp-menu-image::before { color: #fff; }
+.dsaui-admin #adminmenu .wp-submenu li.current a,
+.dsaui-admin #adminmenu .opensub .wp-submenu li.current a,
+.dsaui-admin #adminmenu a.wp-has-current-submenu:focus + .wp-submenu li.current a,
+.dsaui-admin #adminmenu .wp-submenu li.current a:hover,
+.dsaui-admin #adminmenu .wp-submenu li.current a:focus {
+    background: #e9dff8;
+    color: #452087;
+}
+.dsaui-admin #collapse-button { color: var(--dsaui-muted); }
+.dsaui-admin #collapse-button:hover,
+.dsaui-admin #collapse-button:focus { color: #5123ae; }
+.dsaui-admin #adminmenu a:focus-visible {
+    outline: 2px solid #6434c9;
+    outline-offset: -2px;
+}
+
+/* Native WordPress toolbar: retain all layout and dropdown mechanics. */
+.dsaui-admin #wpadminbar {
+    background: #fff;
+    color: var(--dsaui-ink);
+    box-shadow: 0 1px 0 var(--dsaui-line);
+}
+.dsaui-admin #wpadminbar #wp-toolbar .ab-item,
+.dsaui-admin #wpadminbar #wp-toolbar .ab-empty-item,
+.dsaui-admin #wpadminbar #wp-toolbar .ab-label,
+.dsaui-admin #wpadminbar #wp-toolbar .display-name,
+.dsaui-admin #wpadminbar #wp-toolbar .ab-item strong {
+    color: var(--dsaui-ink);
+}
+.dsaui-admin #wpadminbar #wp-toolbar .ab-icon::before,
+.dsaui-admin #wpadminbar #wp-toolbar .ab-item::before,
+.dsaui-admin #wpadminbar #wp-toolbar .wp-admin-bar-arrow::before,
+.dsaui-admin #wpadminbar #wp-toolbar .username,
+.dsaui-admin #wpadminbar #wp-toolbar .display-name.edit-profile {
+    color: var(--dsaui-muted);
+}
+.dsaui-admin #wpadminbar #wp-toolbar .ab-sub-wrapper,
+.dsaui-admin #wpadminbar #wp-toolbar .ab-submenu {
+    background: #f5f3fa;
+}
+.dsaui-admin #wpadminbar #wp-toolbar .ab-sub-secondary,
+.dsaui-admin #wpadminbar #wp-toolbar .ab-sub-secondary .ab-submenu {
+    background: #eee8f7;
+}
+.dsaui-admin #wpadminbar #wp-toolbar .ab-item:hover,
+.dsaui-admin #wpadminbar #wp-toolbar .ab-item:focus,
+.dsaui-admin #wpadminbar #wp-toolbar li.hover > .ab-item,
+.dsaui-admin #wpadminbar:not(.mobile) #wp-toolbar li:hover > .ab-item {
+    background: #f0eafa;
+    color: #5123ae;
+}
+.dsaui-admin #wpadminbar #wp-toolbar .ab-item:is(:hover, :focus) :is(.ab-label, .ab-icon, .display-name, strong),
+.dsaui-admin #wpadminbar #wp-toolbar li.hover > .ab-item :is(.ab-label, .ab-icon, .display-name, strong) {
+    color: #5123ae;
+}
+.dsaui-admin #wpadminbar #wp-toolbar .ab-item:is(:hover, :focus)::before,
+.dsaui-admin #wpadminbar #wp-toolbar .ab-item:is(:hover, :focus) .ab-icon::before,
+.dsaui-admin #wpadminbar #wp-toolbar li.hover > .ab-item::before,
+.dsaui-admin #wpadminbar #wp-toolbar li.hover > .ab-item .ab-icon::before {
+    color: #5123ae;
+}
+.dsaui-admin #wpadminbar #wp-toolbar .ab-item:focus-visible {
+    outline: 2px solid #6434c9;
+    outline-offset: -2px;
+}
+/* Preserve the native recovery-mode warning's contrast if it appears. */
+.dsaui-admin #wpadminbar #wp-toolbar #wp-admin-bar-recovery-mode > .ab-item,
+.dsaui-admin #wpadminbar #wp-toolbar #wp-admin-bar-recovery-mode > .ab-item:is(:hover, :focus) {
+    background: #d63638;
+    color: #fff;
+}

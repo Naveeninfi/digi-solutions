@@ -1,0 +1,1 @@
+<footer class="site-footer"><div class="container footer-inner"><strong>Digi<span class="brand-accent">Solutions</span></strong><span>© <?php echo esc_html(wp_date('Y')); ?> DigiSolutions. All rights reserved.</span></div></footer><?php wp_footer(); ?></body></html>

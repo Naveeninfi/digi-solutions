@@ -1,0 +1,75 @@
+body.wp-admin.dsaui-admin.index-php { background: #f5f6fa; }
+.dsaui-admin #dsaui_overview {
+    border: 1px solid #e7e8ef;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgb(32 38 56 / 5%);
+}
+.dsaui-admin #dsaui_overview .postbox-header { border-bottom-color: #e7e8ef; }
+.dsaui-admin #dsaui_overview .inside { margin: 0; padding: 0; }
+.dsaui-admin .dsaui-overview {
+    padding: 24px;
+    color: #202638;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.dsaui-admin .dsaui-overview * { box-sizing: border-box; }
+.dsaui-admin .dsaui-eyebrow {
+    color: #6434c9;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
+.dsaui-admin .dsaui-intro h3 { margin: 12px 0 8px; font-size: 24px; line-height: 1.3; }
+.dsaui-admin .dsaui-intro p { margin: 0 0 22px; color: #62697a; }
+.dsaui-admin .dsaui-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.dsaui-admin .dsaui-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px;
+    padding: 18px;
+    border: 1px solid #e7e8ef;
+    border-radius: 12px;
+    color: #62697a;
+    background: #faf9fd;
+    text-decoration: none;
+}
+.dsaui-admin .dsaui-card .dashicons { color: #6434c9; }
+.dsaui-admin .dsaui-card strong { font-size: 28px; line-height: 1.1; color: #202638; }
+.dsaui-admin .dsaui-card:hover { border-color: #6434c9; background: #f3eefb; }
+.dsaui-admin .dsaui-section { margin-top: 26px; }
+.dsaui-admin .dsaui-section h3 { font-size: 15px; margin: 0 0 14px; }
+.dsaui-admin .dsaui-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.dsaui-admin .dsaui-action {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #ded8eb;
+    border-radius: 8px;
+    background: #fff;
+    color: #5123ae;
+    font-weight: 600;
+    text-decoration: none;
+}
+.dsaui-admin .dsaui-action:hover { background: #f0eafa; border-color: #6434c9; }
+.dsaui-admin .dsaui-primary { background: #6434c9; color: #fff; border-color: #6434c9; }
+.dsaui-admin .dsaui-primary:hover { background: #5123ae; color: #fff; }
+.dsaui-admin .dsaui-projects { list-style: none; padding: 0; margin: 0; }
+.dsaui-admin .dsaui-projects li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+    padding: 13px 0;
+    border-bottom: 1px solid #e7e8ef;
+}
+.dsaui-admin .dsaui-projects a { color: #5123ae; text-decoration: none; overflow-wrap: anywhere; }
+.dsaui-admin .dsaui-projects a:hover { text-decoration: underline; }
+.dsaui-admin .dsaui-status { background: #f0eafa; color: #5123ae; padding: 4px 9px; border-radius: 20px; font-size: 11px; }
+.dsaui-admin .dsaui-overview a:focus-visible { outline: 2px solid #6434c9; outline-offset: 3px; }
+@media (max-width: 480px) {
+    .dsaui-admin .dsaui-overview { padding: 16px; }
+    .dsaui-admin .dsaui-cards { grid-template-columns: 1fr; }
+    .dsaui-admin .dsaui-projects li { align-items: flex-start; flex-direction: column; gap: 6px; }
+}

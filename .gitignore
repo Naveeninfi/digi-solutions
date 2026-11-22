@@ -1,0 +1,31 @@
+
+# Local WordPress environment
+.env
+.env.*
+!.env.example
+app/.env
+app/.env.*
+app/public/wp-config.php
+
+# Database backups
+*.sql
+*.sql.gz
+*.zip
+
+# Local logs
+logs/
+*.log
+
+# WordPress cache and temporary files
+app/public/wp-content/cache/
+app/public/wp-content/upgrade/
+app/public/wp-content/ai1wm-backups/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local development configuration
+conf/
+logs/
