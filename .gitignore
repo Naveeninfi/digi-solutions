@@ -29,3 +29,25 @@ desktop.ini
 # Local development configuration
 conf/
 logs/
+app/.envrc
+
+# WordPress core
+app/public/wp-admin/
+app/public/wp-includes/
+
+# Ignore all third-party plugins
+app/public/wp-content/plugins/*
+
+# Keep custom DigiSolutions plugins
+!app/public/wp-content/plugins/digi-solutions-manager/
+!app/public/wp-content/plugins/digisolutions-admin-ui/
+
+# Ignore all themes except custom theme
+app/public/wp-content/themes/*
+!app/public/wp-content/themes/digi-solutions/
+
+# WordPress uploads
+app/public/wp-content/uploads/
+
+# Local environment files
+app/.envrc
